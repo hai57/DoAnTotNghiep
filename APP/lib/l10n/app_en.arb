@@ -1,0 +1,10 @@
+{
+  "@@locale": "en",
+  "language": "English",
+  "@language": {
+    "description": "English"
+  },
+  "signup": "Sign up",
+  "login": "Login",
+  "logout": "Log Out"
+}

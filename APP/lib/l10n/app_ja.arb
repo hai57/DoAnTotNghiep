@@ -1,0 +1,9 @@
+{
+  "@@locale": "ja",
+  "language": "Japanese",
+  "@language": {
+    "description": "Japanese"
+  },
+  "signup": "新規登録する",
+  "login": "ログイン"
+}
