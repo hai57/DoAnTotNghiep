@@ -1,0 +1,136 @@
+.data {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 24px;
+  margin-top: 24px;
+  width: 100%;
+  color: var(--dark);
+
+  >.container {
+    border-radius: 20px;
+    background: var(--light);
+    padding: 24px;
+    overflow-x: auto;
+
+    .header {
+      display: flex;
+      align-items: center;
+      grid-gap: 16px;
+      margin-bottom: 24px;
+
+      h3 {
+        margin-right: auto;
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      .bx {
+        cursor: pointer;
+      }
+    }
+
+  }
+
+  .recents {
+    flex-grow: 1;
+    flex-basis: 500px;
+    margin-bottom: 20px;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+
+      th {
+        padding-bottom: 12px;
+        font-size: 20px;
+        text-align: left;
+        border-bottom: 1px solid var(--grey);
+
+      }
+
+      .txt-right {
+        text-align: right
+      }
+
+      .txt-center {
+        text-align: center;
+      }
+
+      td {
+        font-size: 19px;
+        padding: 16px 0;
+
+        &.td-user {
+          display: flex;
+          align-items: center;
+          grid-gap: 12px;
+          padding-left: 6px;
+
+          .img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+
+        &.txt-right {
+          text-align: right;
+
+          .btn {
+            cursor: pointer;
+          }
+        }
+
+        .status {
+          font-size: 10px;
+          padding: 6px 16px;
+          color: var(--light);
+          border-radius: 20px;
+          font-weight: 700;
+        }
+
+        .completed {
+          background: var(--success);
+        }
+
+        .process {
+          background: var(--primary);
+        }
+
+        .pending {
+          background: var(--warning);
+        }
+      }
+
+
+      tr {
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: var(--grey);
+        }
+
+      }
+    }
+  }
+}
+
+.pos-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    padding: 0 10px;
+  }
+
+  .bx {
+    &.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+}

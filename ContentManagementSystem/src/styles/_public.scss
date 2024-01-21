@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap');
+
+
+:root {
+    --light: #f6f6f9;
+    --primary: #1976D2;
+    --light-primary: #CFE8FF;
+    --grey: #eee;
+    --dark-grey: #AAAAAA;
+    --dark: #363949;
+    --danger: #D32F2F;
+    --light-danger: #FECDD3;
+    --warning: #FBC02D;
+    --light-warning: #FFF2C6;
+    --success: #388E3C;
+    --light-success: #BBF7D0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+input[type=number] {
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.bx {
+    color: var(--dark);
+    font-size: 2rem;
+
+    &.bx-edit {
+        margin-right: 10px;
+    }
+}
+
+.w-5 {
+    width: 5%;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.w-15 {
+    width: 15%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+button {
+    background: var(--light);
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.dark {
+    --light: #181a1e;
+    --grey: #25252c;
+    --dark: #fbfbfb
+}
+
+body {
+    background: var(--grey);
+    overflow-x: hidden;
+}
+
+.btn-container {
+    float: right;
+
+    .btn {
+        border-radius: 36px 36px;
+        color: var(--success);
+        cursor: pointer;
+        display: inline-block;
+        padding: 7px 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 250ms;
+        border: none;
+        font-size: 16px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+
+        &:hover {
+            transform: scale(1.05) rotate(-1deg);
+        }
+
+        &.danger {
+            color: var(--danger);
+        }
+    }
+}
+
+.ck-box {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.delete {
+    text-align: right;
+
+    .btn-delete {
+        margin-top: 20px;
+        padding: 5px;
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 20px;
+        background-color: var(--light);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+        cursor: pointer;
+
+        &:hover {
+            color: var(--danger);
+            transition: 0.3s;
+            transform: scale(1.05) rotate(-1deg);
+        }
+    }
+
+    span {
+        margin-right: 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.btn {
+    margin-right: 10px;
+    background: var(--light);
+}
+
+a {
+    margin-right: 10px;
+    color: var(--dark);
+}
+
+.end {
+    float: right;
+}
